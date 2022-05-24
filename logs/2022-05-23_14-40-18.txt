@@ -1,0 +1,7 @@
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN example-app@1.0.0 No repository field.
+
+up to date in 0.22s
+found 0 vulnerabilities
+
+Hello World! The example application is currently running, you will need to upload your own bot to run.
