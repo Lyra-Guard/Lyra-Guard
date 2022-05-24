@@ -1,4 +1,4 @@
-# A Discord Music Bot written in JavaScript, the discord.js library and discord.js-commando framework
+# A Discord Moderation Bot written in JavaScript, the discord.js library and discord.js-commando framework
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
@@ -28,7 +28,7 @@ I run the bot on a debian 9 environment so it might not work as intended on othe
 
 Also, no matter what operating system you have, make sure [ffmpeg](https://www.ffmpeg.org/download.html) and [python 2.7](https://www.python.org/downloads/) are installed. **Discord.js now requires Node version greater than or equal to 12.0.0** .
 
-If you are not cloning this repo, make sure your dependencies versions are the same as this repo's.
+If you are not cloning this repo, make sure your dependencies versions are the same as this repo's!!
 
 ### Commands
 
