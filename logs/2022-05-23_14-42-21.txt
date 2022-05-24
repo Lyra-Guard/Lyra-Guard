@@ -1,0 +1,634 @@
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+
+> better-sqlite3@7.1.4 install /home/minecraft/multicraft/servers/server299829/node_modules/better-sqlite3
+> prebuild-install || npm run build-release
+
+sh: 1: prebuild-install: not found
+
+> better-sqlite3@7.1.4 build-release /home/minecraft/multicraft/servers/server299829/node_modules/better-sqlite3
+> node-gyp rebuild --release
+
+make: Entering directory '/home/minecraft/multicraft/servers/server299829/node_modules/better-sqlite3/build'
+  TOUCH b857c92884e9598d609f6be182a2595df7a8e00f.intermediate
+  ACTION deps_sqlite3_gyp_locate_sqlite3_target_extract_sqlite3 b857c92884e9598d609f6be182a2595df7a8e00f.intermediate
+  TOUCH Release/obj.target/deps/locate_sqlite3.stamp
+  CC(target) Release/obj.target/sqlite3/gen/sqlite3/sqlite3.o
+  AR(target) Release/obj.target/deps/sqlite3.a
+  COPY Release/sqlite3.a
+  CXX(target) Release/obj.target/better_sqlite3/src/better_sqlite3.o
+./src/objects/database.lzz: In static member function ‘static void Database::JS_new(const v8::FunctionCallbackInfo<v8::Value>&)’:
+./src/objects/database.lzz:171:21: warning: variable ‘status’ set but not used [-Wunused-but-set-variable]
+./src/util/data.lzz: In function ‘v8::Local<v8::Value> Data::GetValueJS(v8::Isolate*, sqlite3_stmt*, int, bool)’:
+./src/util/data.lzz:75:92: warning: this statement may fall through [-Wimplicit-fallthrough=]
+./src/util/data.lzz:75:197: note: here
+./src/util/data.lzz: In function ‘v8::Local<v8::Value> Data::GetValueJS(v8::Isolate*, sqlite3_value*, bool)’:
+./src/util/data.lzz:79:81: warning: this statement may fall through [-Wimplicit-fallthrough=]
+./src/util/data.lzz:79:175: note: here
+  SOLINK_MODULE(target) Release/obj.target/better_sqlite3.node
+  COPY Release/better_sqlite3.node
+  CC(target) Release/obj.target/test_extension/deps/test_extension.o
+  SOLINK_MODULE(target) Release/obj.target/test_extension.node
+  COPY Release/test_extension.node
+rm b857c92884e9598d609f6be182a2595df7a8e00f.intermediate
+make: Leaving directory '/home/minecraft/multicraft/servers/server299829/node_modules/better-sqlite3/build'
+
+> @discordjs/opus@0.3.3 install /home/minecraft/multicraft/servers/server299829/node_modules/@discordjs/opus
+> node-pre-gyp install --fallback-to-build
+
+node-pre-gyp WARN Using needle for node-pre-gyp https download 
+node-pre-gyp WARN Tried to download(404): https://github.com/discordjs/opus/releases/download/v0.3.3/opus-v0.3.3-node-v72-napi-v3-linux-x64-glibc-%7Blibc_version%7D.tar.gz 
+node-pre-gyp WARN Pre-built binaries not found for @discordjs/opus@0.3.3 and node@12.16.3 (node-v72 ABI, glibc) (falling back to source compile with node-gyp) 
+make: Entering directory '/home/minecraft/multicraft/servers/server299829/node_modules/@discordjs/opus/build'
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_multistream.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_projection_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/analysis.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/mlp_data.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_multistream_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_projection_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/mapping_matrix.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_compare.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/mlp.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_multistream_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/repacketizer.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_frame.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/inner_product_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/scale_vector_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_pred_coefs_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/schur_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/warped_autocorrelation_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/burg_modified_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_LPC_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LPC_inv_pred_gain_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/scale_copy_vector_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/noise_shape_analysis_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/pitch_analysis_core_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/bwexpander_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LTP_analysis_filter_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LTP_scale_ctrl_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/corrMatrix_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/encode_frame_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/sort_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_pitch_lags_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/residual_energy_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LPC_analysis_filter_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/autocorrelation_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/k2a_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/regularize_correlations_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_LTP_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/energy_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/apply_sine_window_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/wrappers_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/process_gains_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_quant_pred.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LPC_inv_pred_gain.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/process_NLSFs.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NSQ.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/check_control_input.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_del_dec_quant.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LPC_analysis_filter.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/dec_API.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/sort.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/VAD.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_AR2.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LPC_fit.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/control_SNR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_parameters.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/pitch_est_tables.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/warped_autocorrelation_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/apply_sine_window_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/residual_energy16_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/schur64_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/residual_energy_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/noise_shape_analysis_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/encode_frame_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/schur_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/autocorr_FIX.o
+../deps/opus/silk/fixed/autocorr_FIX.c: In function ‘silk_autocorr’:
+../deps/opus/silk/fixed/autocorr_FIX.c:47:29: warning: passing argument 1 of ‘_celt_autocorr’ from incompatible pointer type [-Wincompatible-pointer-types]
+     *scale = _celt_autocorr(inputData, results, NULL, 0, corrCount-1, inputDataSize, arch);
+                             ^~~~~~~~~
+In file included from ../deps/opus/silk/fixed/autocorr_FIX.c:33:0:
+../deps/opus/celt/celt_lpc.h:63:5: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ int _celt_autocorr(const opus_val16 *x, opus_val32 *ac,
+     ^~~~~~~~~~~~~~
+../deps/opus/silk/fixed/autocorr_FIX.c:47:40: warning: passing argument 2 of ‘_celt_autocorr’ from incompatible pointer type [-Wincompatible-pointer-types]
+     *scale = _celt_autocorr(inputData, results, NULL, 0, corrCount-1, inputDataSize, arch);
+                                        ^~~~~~~
+In file included from ../deps/opus/silk/fixed/autocorr_FIX.c:33:0:
+../deps/opus/celt/celt_lpc.h:63:5: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ int _celt_autocorr(const opus_val16 *x, opus_val32 *ac,
+     ^~~~~~~~~~~~~~
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/burg_modified_FIX.o
+../deps/opus/silk/fixed/burg_modified_FIX.c: In function ‘silk_burg_modified_c’:
+../deps/opus/silk/fixed/burg_modified_FIX.c:98:30: warning: passing argument 1 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+             celt_pitch_xcorr(x_ptr, x_ptr + 1, xcorr, subfr_length - D, D, arch );
+                              ^~~~~
+In file included from ../deps/opus/silk/fixed/burg_modified_FIX.c:35:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/burg_modified_FIX.c:98:37: warning: passing argument 2 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+             celt_pitch_xcorr(x_ptr, x_ptr + 1, xcorr, subfr_length - D, D, arch );
+                                     ^~~~~
+In file included from ../deps/opus/silk/fixed/burg_modified_FIX.c:35:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/burg_modified_FIX.c:98:48: warning: passing argument 3 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+             celt_pitch_xcorr(x_ptr, x_ptr + 1, xcorr, subfr_length - D, D, arch );
+                                                ^~~~~
+In file included from ../deps/opus/silk/fixed/burg_modified_FIX.c:35:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/pitch_analysis_core_FIX.o
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c: In function ‘silk_pitch_analysis_core’:
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:200:27: warning: passing argument 1 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - MAX_LAG_4KHZ, xcorr32, SF_LENGTH_8KHZ, MAX_LAG_4KHZ - MIN_LAG_4KHZ + 1, arch );
+                           ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:200:39: warning: passing argument 2 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - MAX_LAG_4KHZ, xcorr32, SF_LENGTH_8KHZ, MAX_LAG_4KHZ - MIN_LAG_4KHZ + 1, arch );
+                                       ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:200:66: warning: passing argument 3 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - MAX_LAG_4KHZ, xcorr32, SF_LENGTH_8KHZ, MAX_LAG_4KHZ - MIN_LAG_4KHZ + 1, arch );
+                                                                  ^~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c: In function ‘silk_P_Ana_calc_corr_st3’:
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:616:27: warning: passing argument 1 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - start_lag - lag_high, xcorr32, sf_length, lag_high - lag_low + 1, arch );
+                           ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:616:39: warning: passing argument 2 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - start_lag - lag_high, xcorr32, sf_length, lag_high - lag_low + 1, arch );
+                                       ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:616:74: warning: passing argument 3 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - start_lag - lag_high, xcorr32, sf_length, lag_high - lag_low + 1, arch );
+                                                                          ^~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_LTP_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_LPC_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/corrMatrix_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/k2a_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/LTP_scale_ctrl_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/process_gains_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/k2a_Q16_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/regularize_correlations_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/LTP_analysis_filter_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/vector_ops_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_pitch_lags_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_pred_coefs_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/control_audio_bandwidth.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decoder_set_fs.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_unpack.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/bwexpander.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_rom.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/shell_coder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_pulses.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/bwexpander_32.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_core.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/PLC.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_NLSF_CB_WB.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/table_LSF_cos.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_pulses_per_block.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_gain.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/inner_prod_aligned.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_down2_3.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NSQ_del_dec.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_pitch.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_VQ_weights_laroia.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/interpolate.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/debug.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_other.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LP_variable_cutoff.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_decode.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/encode_pulses.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/control_codec.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_LR_to_MS.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/HP_variable_cutoff.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/encode_indices.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/init_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_encode_pred.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_VQ.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/init_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_IIR_FIR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_up2_HQ.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/sigm_Q15.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/sum_sqr_shift.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_LTP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_down2.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/code_signs.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_NLSF_CB_NB_MB.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/gain_quant.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_pitch_lag.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_stabilize.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_find_predictor.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/A2NLSF.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF2A.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/VQ_WMat_EC.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_encode.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/log2lin.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_decode_pred.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/lin2log.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/CNG.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/enc_API.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/biquad_alt.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/quant_LTP_gains.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_down_FIR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/ana_filt_bank_1.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_MS_to_LR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_indices.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/rate.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/entdec.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/modes.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt_lpc.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/laplace.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/cwrs.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/entcode.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/mdct.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/quant_bands.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/vq.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/bands.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/kiss_fft.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/entenc.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/mathops.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/pitch.o
+  AR(target) Release/obj.target/deps/opus.a
+  COPY Release/opus.a
+  CXX(target) Release/obj.target/opus/src/node-opus.o
+<command-line>:0:6: warning: ISO C++11 requires whitespace after the macro name
+../src/node-opus.cc: In member function ‘Napi::Value OpusEncoder::Encode(const Napi::CallbackInfo&)’:
+../src/node-opus.cc:103:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/node-opus.cc: In member function ‘Napi::Value OpusEncoder::Decode(const Napi::CallbackInfo&)’:
+../src/node-opus.cc:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+  SOLINK_MODULE(target) /home/minecraft/multicraft/servers/server299829/node_modules/@discordjs/opus/prebuild/node-v72-napi-v3-linux-x64-glibc-{libc_version}/opus.node
+  COPY Release/opus.node
+make: Leaving directory '/home/minecraft/multicraft/servers/server299829/node_modules/@discordjs/opus/build'
+
+> canvas@2.7.0 install /home/minecraft/multicraft/servers/server299829/node_modules/canvas
+> node-pre-gyp install --fallback-to-build
+
+node-pre-gyp WARN Using needle for node-pre-gyp https download 
+[canvas] Success: "/home/minecraft/multicraft/servers/server299829/node_modules/canvas/build/Release/canvas.node" is installed via remote
+
+> @discordjs/opus@0.5.0 install /home/minecraft/multicraft/servers/server299829/node_modules/discord.js/node_modules/@discordjs/opus
+> node-pre-gyp install --fallback-to-build
+
+node-pre-gyp WARN Using needle for node-pre-gyp https download 
+node-pre-gyp WARN Tried to download(404): https://github.com/discordjs/opus/releases/download/v0.5.0/opus-v0.5.0-node-v72-napi-v3-linux-x64-glibc-%7Blibc_version%7D.tar.gz 
+node-pre-gyp WARN Pre-built binaries not found for @discordjs/opus@0.5.0 and node@12.16.3 (node-v72 ABI, glibc) (falling back to source compile with node-gyp) 
+make: Entering directory '/home/minecraft/multicraft/servers/server299829/node_modules/discord.js/node_modules/@discordjs/opus/build'
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_multistream.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_projection_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/analysis.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/mlp_data.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_multistream_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_projection_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/mapping_matrix.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_compare.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/mlp.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_multistream_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/repacketizer.o
+  CC(target) Release/obj.target/libopus/deps/opus/src/opus_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_frame.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/inner_product_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/scale_vector_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_pred_coefs_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/schur_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/warped_autocorrelation_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/burg_modified_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_LPC_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LPC_inv_pred_gain_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/scale_copy_vector_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/noise_shape_analysis_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/pitch_analysis_core_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/bwexpander_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LTP_analysis_filter_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LTP_scale_ctrl_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/corrMatrix_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/encode_frame_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/sort_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_pitch_lags_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/residual_energy_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/LPC_analysis_filter_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/autocorrelation_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/k2a_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/regularize_correlations_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/find_LTP_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/energy_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/apply_sine_window_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/wrappers_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/float/process_gains_FLP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_quant_pred.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LPC_inv_pred_gain.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/process_NLSFs.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NSQ.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/check_control_input.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_del_dec_quant.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LPC_analysis_filter.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/dec_API.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/sort.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/VAD.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_AR2.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LPC_fit.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/control_SNR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_parameters.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/pitch_est_tables.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/warped_autocorrelation_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/apply_sine_window_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/residual_energy16_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/schur64_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/residual_energy_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/noise_shape_analysis_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/encode_frame_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/schur_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/autocorr_FIX.o
+../deps/opus/silk/fixed/autocorr_FIX.c: In function ‘silk_autocorr’:
+../deps/opus/silk/fixed/autocorr_FIX.c:47:29: warning: passing argument 1 of ‘_celt_autocorr’ from incompatible pointer type [-Wincompatible-pointer-types]
+     *scale = _celt_autocorr(inputData, results, NULL, 0, corrCount-1, inputDataSize, arch);
+                             ^~~~~~~~~
+In file included from ../deps/opus/silk/fixed/autocorr_FIX.c:33:0:
+../deps/opus/celt/celt_lpc.h:63:5: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ int _celt_autocorr(const opus_val16 *x, opus_val32 *ac,
+     ^~~~~~~~~~~~~~
+../deps/opus/silk/fixed/autocorr_FIX.c:47:40: warning: passing argument 2 of ‘_celt_autocorr’ from incompatible pointer type [-Wincompatible-pointer-types]
+     *scale = _celt_autocorr(inputData, results, NULL, 0, corrCount-1, inputDataSize, arch);
+                                        ^~~~~~~
+In file included from ../deps/opus/silk/fixed/autocorr_FIX.c:33:0:
+../deps/opus/celt/celt_lpc.h:63:5: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ int _celt_autocorr(const opus_val16 *x, opus_val32 *ac,
+     ^~~~~~~~~~~~~~
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/burg_modified_FIX.o
+../deps/opus/silk/fixed/burg_modified_FIX.c: In function ‘silk_burg_modified_c’:
+../deps/opus/silk/fixed/burg_modified_FIX.c:98:30: warning: passing argument 1 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+             celt_pitch_xcorr(x_ptr, x_ptr + 1, xcorr, subfr_length - D, D, arch );
+                              ^~~~~
+In file included from ../deps/opus/silk/fixed/burg_modified_FIX.c:35:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/burg_modified_FIX.c:98:37: warning: passing argument 2 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+             celt_pitch_xcorr(x_ptr, x_ptr + 1, xcorr, subfr_length - D, D, arch );
+                                     ^~~~~
+In file included from ../deps/opus/silk/fixed/burg_modified_FIX.c:35:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/burg_modified_FIX.c:98:48: warning: passing argument 3 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+             celt_pitch_xcorr(x_ptr, x_ptr + 1, xcorr, subfr_length - D, D, arch );
+                                                ^~~~~
+In file included from ../deps/opus/silk/fixed/burg_modified_FIX.c:35:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/pitch_analysis_core_FIX.o
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c: In function ‘silk_pitch_analysis_core’:
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:200:27: warning: passing argument 1 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - MAX_LAG_4KHZ, xcorr32, SF_LENGTH_8KHZ, MAX_LAG_4KHZ - MIN_LAG_4KHZ + 1, arch );
+                           ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:200:39: warning: passing argument 2 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - MAX_LAG_4KHZ, xcorr32, SF_LENGTH_8KHZ, MAX_LAG_4KHZ - MIN_LAG_4KHZ + 1, arch );
+                                       ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:200:66: warning: passing argument 3 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - MAX_LAG_4KHZ, xcorr32, SF_LENGTH_8KHZ, MAX_LAG_4KHZ - MIN_LAG_4KHZ + 1, arch );
+                                                                  ^~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c: In function ‘silk_P_Ana_calc_corr_st3’:
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:616:27: warning: passing argument 1 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - start_lag - lag_high, xcorr32, sf_length, lag_high - lag_low + 1, arch );
+                           ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:616:39: warning: passing argument 2 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - start_lag - lag_high, xcorr32, sf_length, lag_high - lag_low + 1, arch );
+                                       ^~~~~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘const opus_val16 * {aka const float *}’ but argument is of type ‘const opus_int16 * {aka const short int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:616:74: warning: passing argument 3 of ‘celt_pitch_xcorr_c’ from incompatible pointer type [-Wincompatible-pointer-types]
+         celt_pitch_xcorr( target_ptr, target_ptr - start_lag - lag_high, xcorr32, sf_length, lag_high - lag_low + 1, arch );
+                                                                          ^~~~~~~
+In file included from ../deps/opus/silk/fixed/pitch_analysis_core_FIX.c:39:0:
+../deps/opus/celt/pitch.h:185:1: note: expected ‘opus_val32 * {aka float *}’ but argument is of type ‘opus_int32 * {aka int *}’
+ celt_pitch_xcorr_c(const opus_val16 *_x, const opus_val16 *_y,
+ ^~~~~~~~~~~~~~~~~~
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_LTP_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_LPC_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/corrMatrix_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/k2a_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/LTP_scale_ctrl_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/process_gains_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/k2a_Q16_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/regularize_correlations_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/LTP_analysis_filter_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/vector_ops_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_pitch_lags_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/fixed/find_pred_coefs_FIX.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/control_audio_bandwidth.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decoder_set_fs.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_unpack.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/bwexpander.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_rom.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/shell_coder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_pulses.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/bwexpander_32.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_core.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/PLC.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_NLSF_CB_WB.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/table_LSF_cos.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_pulses_per_block.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_gain.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/inner_prod_aligned.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_down2_3.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NSQ_del_dec.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_pitch.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_VQ_weights_laroia.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/interpolate.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/debug.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_other.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/LP_variable_cutoff.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_decode.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/encode_pulses.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/control_codec.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_LR_to_MS.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/HP_variable_cutoff.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/encode_indices.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/init_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_encode_pred.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_VQ.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/init_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_IIR_FIR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_up2_HQ.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/sigm_Q15.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/sum_sqr_shift.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_LTP.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_down2.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/code_signs.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_NLSF_CB_NB_MB.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/gain_quant.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/tables_pitch_lag.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_stabilize.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_find_predictor.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/A2NLSF.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF2A.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/VQ_WMat_EC.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/NLSF_encode.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/log2lin.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_decode_pred.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/lin2log.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/CNG.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/enc_API.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/biquad_alt.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/quant_LTP_gains.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/resampler_private_down_FIR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/ana_filt_bank_1.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/stereo_MS_to_LR.o
+  CC(target) Release/obj.target/libopus/deps/opus/silk/decode_indices.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/rate.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/entdec.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/modes.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt_lpc.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/laplace.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/cwrs.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/entcode.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt_decoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/celt_encoder.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/mdct.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/quant_bands.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/vq.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/bands.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/kiss_fft.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/entenc.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/mathops.o
+  CC(target) Release/obj.target/libopus/deps/opus/celt/pitch.o
+  AR(target) Release/obj.target/deps/opus.a
+  COPY Release/opus.a
+  CXX(target) Release/obj.target/opus/src/node-opus.o
+<command-line>:0:6: warning: ISO C++11 requires whitespace after the macro name
+../src/node-opus.cc: In member function ‘Napi::Value OpusEncoder::Encode(const Napi::CallbackInfo&)’:
+../src/node-opus.cc:103:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/node-opus.cc: In member function ‘Napi::Value OpusEncoder::Decode(const Napi::CallbackInfo&)’:
+../src/node-opus.cc:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+  SOLINK_MODULE(target) /home/minecraft/multicraft/servers/server299829/node_modules/discord.js/node_modules/@discordjs/opus/prebuild/node-v72-napi-v3-linux-x64-glibc-{libc_version}/opus.node
+  COPY Release/opus.node
+make: Leaving directory '/home/minecraft/multicraft/servers/server299829/node_modules/discord.js/node_modules/@discordjs/opus/build'
+
+> ffmpeg-static@4.3.0 install /home/minecraft/multicraft/servers/server299829/node_modules/ffmpeg-static
+> node install.js
+
+
+
+> nodemon@1.19.4 postinstall /home/minecraft/multicraft/servers/server299829/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+[32mLove nodemon? You can now support the project via the open collective:[22m[39m
+ > [96m[1mhttps://opencollective.com/nodemon/donate[0m
+
+npm WARN master-bot@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 518 packages from 390 contributors and audited 516 packages in 495.948s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 33 vulnerabilities (3 moderate, 25 high, 5 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> master-bot@1.0.0 start /home/minecraft/multicraft/servers/server299829
+> node .
+
+internal/modules/cjs/loader.js:960
+  throw err;
+  ^
+
+Error: Cannot find module 'node:events'
+Require stack:
+- /home/minecraft/multicraft/servers/server299829/node_modules/discord.js/src/client/BaseClient.js
+- /home/minecraft/multicraft/servers/server299829/node_modules/discord.js/src/index.js
+- /home/minecraft/multicraft/servers/server299829/node_modules/discord.js-commando/src/client.js
+- /home/minecraft/multicraft/servers/server299829/node_modules/discord.js-commando/src/index.js
+- /home/minecraft/multicraft/servers/server299829/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:957:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:840:27)
+    at Module.require (internal/modules/cjs/loader.js:1019:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (/home/minecraft/multicraft/servers/server299829/node_modules/discord.js/src/client/BaseClient.js:3:22)
+    at Module._compile (internal/modules/cjs/loader.js:1133:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1153:10)
+    at Module.load (internal/modules/cjs/loader.js:977:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:877:14)
+    at Module.require (internal/modules/cjs/loader.js:1019:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/minecraft/multicraft/servers/server299829/node_modules/discord.js/src/client/BaseClient.js',
+    '/home/minecraft/multicraft/servers/server299829/node_modules/discord.js/src/index.js',
+    '/home/minecraft/multicraft/servers/server299829/node_modules/discord.js-commando/src/client.js',
+    '/home/minecraft/multicraft/servers/server299829/node_modules/discord.js-commando/src/index.js',
+    '/home/minecraft/multicraft/servers/server299829/index.js'
+  ]
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! master-bot@1.0.0 start: `node .`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the master-bot@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /tmp/npm/_logs/2022-05-23T14_50_38_429Z-debug.log

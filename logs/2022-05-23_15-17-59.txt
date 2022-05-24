@@ -1,0 +1,37 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 25 21.5M   25 5663k    0     0  4488k      0  0:00:04  0:00:01  0:00:03 4484k100 21.5M  100 21.5M    0     0  10.0M      0  0:00:02  0:00:02 --:--:-- 10.0M
+npm WARN deprecated node-pre-gyp@0.17.0: Please upgrade to @mapbox/node-pre-gyp: the non-scoped node-pre-gyp package is deprecated and only the @mapbox scoped package will recieve updates in the future
+
+added 67 packages, and audited 68 packages in 3s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice 
+npm notice New minor version of npm available! 8.5.1 -> 8.10.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v8.10.0>
+npm notice Run `npm install -g npm@8.10.0` to update!
+npm notice 
+
+added 16 packages, removed 9 packages, changed 36 packages, and audited 528 packages in 5s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+14 vulnerabilities (3 moderate, 10 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> master-bot@1.0.0 start
+> node .
+
+Lyra Guard#2408 is Ready!
+[ 'Lyra Guard' ] Connected!
