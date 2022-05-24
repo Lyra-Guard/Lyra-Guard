@@ -116,3 +116,5 @@ Anyone is welcome to suggest new features and improve code quality!
 [encoder-glitch](https://github.com/encoder-glitch) - uptime command
 
 [chimaerra](https://github.com/chimaerra) - minor command tweaks
+
+Any questions feel free to DM me D&nny#3692 or Join Lyra Guards Support Discord -> https://discord.gg/Cv3ANzkZFX
